@@ -242,3 +242,92 @@ body {
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
+/* Movie details link */
+.movie-details-link {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+/* Movie action buttons */
+.movie-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 0 1.5rem 1.5rem;
+}
+
+.movie-actions .favorite-button {
+  width: 100%;
+}
+
+.watchlist-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #244b38;
+  color: #ffffff;
+  border: 2px solid #387653;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.watchlist-button:hover {
+  background-color: #326b4c;
+}
+
+/* Movie details page */
+.details-page {
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) 1fr;
+  gap: 2rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+.details-poster {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.details-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.details-info p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #dddddd;
+}
+
+.details-info .watchlist-button {
+  max-width: 320px;
+  margin-bottom: 1.5rem;
+}
+
+.movie-overview {
+  margin-top: 1.5rem;
+}
+
+.back-link {
+  color: #ff6b6b;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+  .details-page {
+    grid-template-columns: 1fr;
+  }
+
+  .details-poster {
+    max-width: 280px;
+  }
+}
